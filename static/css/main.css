@@ -203,7 +203,12 @@ body.signin{
 .btn-blue{background-color: #3b99fc;border-color: #3489e3;margin-left: 8px;color: #fff;}
 .btn-red{background-color: #fe4f33;border-color: #e3462d;margin-left: 8px;color: #fff;}
 .btn-gray{background-color: #ffffff;border-color: #e5e5e5;margin-left: 8px;color: #4a4643;}
-.btn-blue:focus,.btn-blue:hover,.btn-red:focus,.btn-red:hover{color: #fff;}
+.btn-blue:focus{color: #fff;}
+.btn-blue:hover{color: #fff;background-color: #3489e3;/*color: rgba(255,255,255,0.5)*/}
+.btn-red:focus{color: #fff;}
+.btn-red:hover{color: #fff;background-color: #e3462d;}
+.btn-gray:focus{color: rgba(74,70,67,0.55);}
+.btn-gray:hover{color: rgba(74,70,67,0.55);background-color: #e5e5e5;}
 .btns-hd.form-group > button:first-child{margin-left:0;}
 .table_content .table_content-r{padding: 0;}
 .table_content .table_content-r .btns-hd{text-align: right;margin-bottom: 0;border-bottom:1px solid #eff0f4;padding-right: 14px;}
@@ -219,12 +224,23 @@ body.signin{
 .modal-content .modal-body .form-group.row div.cd input{width: 100%;}
 .modal-content .modal-body .form-group.row div.rd{padding-left: 0;}
 .modal-content .modal-body .form-group.row div.rd span{margin-top: 14px;display: inline-block;width: 4px; height: 4px; border-radius: 4px;background-color: #fe4f33;}
+.golbal_sty .form-group.row{width: 100%;margin-bottom: 10px;}
+.golbal_sty .form-group.row div.ld{text-align: right;padding-right: 0;}
+.golbal_sty .form-group.row div.ld label{margin-top: 8px;font-weight: normal;}
+.golbal_sty .form-group.row div.cd{padding-left: 8px;padding-right: 8px;}
+.golbal_sty .form-group.row div.cd input{width: 100%;}
+.golbal_sty .form-group.row div.rd{padding-left: 0;}
+.golbal_sty .form-group.row div.rd span{margin-top: 14px;display: inline-block;width: 4px; height: 4px; border-radius: 4px;background-color: #fe4f33;}
 .modal-content .modal-body .form-group .help-block{margin-bottom: 2px;}
 .modal-content .modal-footer{border-top:0;}
 .modal-content .modal-footer .form-group{text-align: center}
 .modal-content .modal-footer .form-group .btn{width: 78px;height: 36px;}
 .modal-content .modal-footer .form-group .btn-close{color: #6e6b69}
+.modal-content .modal-footer .form-group .btn-close:focus{color: rgba(74,70,67,0.55);}
+.modal-content .modal-footer .form-group .btn-close:hover{color: rgba(74,70,67,0.55);background-color: #e5e5e5;}
 .modal-content .modal-footer .form-group .btn-confirm{background-color: #3b99fc;border-color: #3489e3;margin-left: 8px;}
+.modal-content .modal-footer .form-group .btn-confirm:focus{color: #fff;}
+.modal-content .modal-footer .form-group .btn-confirm:hover{color: #fff;background-color: #3489e3;}
 .span-info{
     display: inline-block;
     padding: 6px 12px;
@@ -374,11 +390,104 @@ body.signin{
         box-shadow: 0 6px 18px rgba(27,28,29,.2);
     }
 }
+.special_department_staff{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #e1e2e6;
+}
+.special_department_staff .special_hd span ,.person_manager .special_hd span{
+    display: inline-block;
+    /*width: 102px;*/
+    padding: 0 30px;
+    height: 39px;
+    text-align: center;
+    line-height: 39px;
+    background: #f7f8fa;
+    color: #807b78;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    cursor: pointer;
+}
+.special_department_staff .special_hd span.cur ,.person_manager .special_hd span.cur{
+    background: #fff;
+    color: #ff6500;
+}
+.special_department_staff .special_bd{
+    background: #fff;
+
+}
+.btn-white{
+    background: #fff;
+    color: #4a4643;
+    border:1px solid #e5e5e5;
+}
+.special_department_staff .table_content-l .btns-hd{
+    text-align: left;
+    padding-left: 14px;
+}
+.special_department_staff .table_content-l .btns-hd .btn-white{
+    margin-left: 8px;
+}
+.golbal_sty .tap-panel .tap-panel2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.golbal_sty .tap-panel .tap-panel2 .btn-confirm {
+    background-color: #3b99fc;
+    border-color: #3489e3;
+    margin-left: 8px;
+}
+.golbal_sty .tap-panel .tap-panel2 button{
+    width: 78px;
+    height: 36px;
+}
+
+@media screen and (max-width: 1198px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+    .table_content .btn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+.table-con li input[type="checkbox"]{
+    display: none;
+}
+.table-con li input[type="checkbox"] + span.includebox:before {
+    content: " ";
+    display: inline-block;
+    width: 14px;
+    height: 15px;
+    background: url(../../static/images/checkbox.png) no-repeat;
+    background-position: 0px 1px;
+    margin-right: 5px;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+.table-con li input[type="checkbox"]:checked + span.includebox:before {
+    background-position: 0px -17px;
+}
+.table-con li input[type="checkbox"] + span.includebox{
+    float: left;
+    width: 72px;
+}
+.table-con .staff li{
+    padding: 12px 0px;
+}
+.table-con li span.duty{
+    float: left;
+    width: 60px;
+}
+.table-con li  .department{
+    float: left;
+    width: 93px;
+}
+.table-con .staff li:nth-child(2n){
+    background: #fafafa;
+}
 .table_content .table thead th{line-height: 50px;height:50px;text-align: center;font-size: 12px;color: #4a4643;font-weight: normal;border: 0;padding: 0}
 .table_content .table tbody td{line-height: 39px;height:40px;text-align: center;font-size: 12px;color: #4a4643;border: 0;padding: 0}
 .table_content .table tbody tr:nth-child(2n+1) td{background-color: #fafafa;}
 .table_content .table tbody td .btn{margin-left: 0}
-.table_content .table tbody td .btn-handle{border: 1px solid #e3e3e3;display: inline-block;border-radius: 2px;background-color: #fff;    padding: 5px 16px;  line-height: 1.42857143;cursor: pointer;}
+.table_content .table tbody td .btn-handle{ margin-left: 0px;border: 1px solid #e3e3e3;display: inline-block;border-radius: 2px;background-color: #fff;    padding: 5px 16px;  line-height: 1.42857143;cursor: pointer;}
 .table_content .table tbody td .dropdown .btn-handle{padding: 5px 9px;}
 .table_content .table .dropdown-menu{min-width: 98px;  margin: 0;  right: 5px;  left: auto;border-color: #e5e5e5;border-radius: 2px;color: #4a4643;-webkit-box-shadow: 6px 0 18px rgba(27,28,29,.2);  box-shadow: 6px 0 18px rgba(27,28,29,.2);padding: 0;}
 .table_content .table .dropdown-menu>li>a{padding: 4px 20px;}

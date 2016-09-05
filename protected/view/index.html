@@ -15,7 +15,7 @@
 
     <div id="container">
         <div id="center" class="column personnel_organization">
-            <div class="hide">
+            <div class="">
                 <h3>人员组织管理</h3>
                 <div class="mobileAaddress form-group clearfix" style="margin-bottom: 3px;">
                     <label class="control-label col-sm-2 range">移动通讯录查看范围：</label>
@@ -167,8 +167,8 @@
                     <div class="modal-footer">
                         <div class="form-group clearfix">
                             <div class="">
-                                <button type="button" class="btn btn-default btn-close" ng-click="closeThisDialog()">取消</button>
-                                <button type="button" class="btn btn-primary btn-confirm" ng-click="confirm()">确定</button>
+                                <button type="button" class="btn btn-gray" ng-click="closeThisDialog()">取消</button>
+                                <button type="button" class="btn btn-blue" ng-click="confirm()">确定</button>
                             </div>
                         </div>
                     </div>
@@ -232,8 +232,8 @@
                     <div class="modal-footer">
                         <div class="form-group clearfix">
                             <div class="">
-                                <button type="button" class="btn btn-default btn-close" ng-click="closeThisDialog()">取消</button>
-                                <button type="button" class="btn btn-primary btn-confirm" ng-click="confirm()">确定</button>
+                                <button type="button" class="btn btn-gray" ng-click="closeThisDialog()">取消</button>
+                                <button type="button" class="btn btn-blue" ng-click="confirm()">确定</button>
                             </div>
                         </div>
                     </div>
@@ -244,8 +244,8 @@
                     <div class="modal-footer">
                         <div class="form-group clearfix">
                             <div class="">
-                                <button type="button" class="btn btn-default btn-close" ng-click="closeThisDialog()">取消</button>
-                                <button type="button" class="btn btn-primary btn-confirm" ng-click="confirm()">确定</button>
+                                <button type="button" class="btn btn-gray" ng-click="closeThisDialog()">取消</button>
+                                <button type="button" class="btn btn-blue" ng-click="confirm()">确定</button>
                             </div>
                         </div>
                     </div>
@@ -256,125 +256,396 @@
                     <div class="modal-footer">
                         <div class="form-group clearfix">
                             <div class="">
-                                <button type="button" class="btn btn-default btn-close" ng-click="closeThisDialog()">取消</button>
-                                <button type="button" class="btn btn-primary btn-confirm" ng-click="confirm()">确定</button>
+                                <button type="button" class="btn btn-gray" ng-click="closeThisDialog()">取消</button>
+                                <button type="button" class="btn btn-blue" ng-click="confirm()">确定</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
-                <h3>人员属性管理</h3>
-                <ul><li>已显示用户属性</li><li>未已显示用户属性</li></ul>
-                <div class="table_content">
-                    <div class="table_content_box ">
-                        <table class="table">
-                            <thead>
-                            <th>属性标识</th>
-                            <th>属性名称</th>
-                            <th>顺序</th>
-                            <th>是否禁用</th>
-                            <th>能否编辑</th>
-                            <th>可拨打</th>
-                            <th>操作</th>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>avatar</td>
-                                <td>头像</td>
-                                <td>1</td>
-                                <td><button type="button" class="btn btn-red">禁用</button></td>
-                                <td>可编辑</td>
-                                <td>不可拨打</td>
-                                <td>
-                                    <div class="dropdown">
-                                    <span class="dropdown-toggle btn-handle" data-toggle="dropdown">操作<span class="caret"></span></span>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">修改</a></li>
-                                        <li><a href="#">上移</a></li>
-                                        <li><a href="#">下移</a></li>
-                                    </ul>
+            <div class="hide">
+
+                <h3>特殊部门 / 人员</h3>
+                <div class="special_department_staff">
+                    <div class="special_hd">
+                        <span class="cur">特殊部门</span>
+                        <span>特殊人员</span>
+                    </div>
+
+                    <div class="special_bd table_content clearfix hide">
+                        <div class="table_content-l col-sm-4">
+                            <div class="btns-hd form-group">
+                                <button type="button" class="btn btn-blue">添加部门</button>
+                                <button type="button" class="btn btn-gray">清空权限</button>
+                            </div>
+                            <div class="table-con">581 同城</div>
+                        </div>
+                        <div class="table_content-r col-sm-8">
+                            <h3 style="line-height: 55px;padding-left: 18px;border-bottom: 1px solid #eff0f4;">部门权力</h3>
+                            <div class="table-con golbal_sty" style="padding-top:30px;">
+                                <form action="" class="form-inline">
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 ld"><label>上级部门 :</label></div>
+                                        <div class="col-sm-7 cd">
+                                            <div class="col-sm-12" style="padding-left: 0px;padding-right: 0px;">
+                                                <span class="span-info">信息系统部</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>avatar</td>
-                                <td>头像</td>
-                                <td>1</td>
-                                <td><button type="button" class="btn btn-red">禁用</button></td>
-                                <td>可编辑</td>
-                                <td>不可拨打</td>
-                                <td><div class="dropdown">
-                                    <span class="dropdown-toggle btn-handle" data-toggle="dropdown">操作<span class="caret"></span></span>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">修改</a></li>
-                                        <li><a href="#">上移</a></li>
-                                        <li><a href="#">下移</a></li>
-                                    </ul>
-                                </div></td>
-                            </tr>
-                            <tr>
-                                <td>avatar</td>
-                                <td>头像</td>
-                                <td>1</td>
-                                <td><button type="button" class="btn btn-red">禁用</button></td>
-                                <td>可编辑</td>
-                                <td>不可拨打</td>
-                                <td><div class="dropdown">
-                                    <span class="dropdown-toggle btn-handle" data-toggle="dropdown">操作<span class="caret"></span></span>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">修改</a></li>
-                                        <li><a href="#">上移</a></li>
-                                        <li><a href="#">下移</a></li>
-                                    </ul>
-                                </div></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <div class="pagination-box">
-                            <ul class="pagination">
-                                <li><a href="#">上一页</a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">下一页</a></li>
-                            </ul>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 ld"><label>部门编码 :</label></div>
+                                        <div class="col-sm-7 cd"><input type="text" class="form-control"></div>
+                                        <div class="col-sm-2 rd"><span></span></div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 ld"><label>部门名称 :</label></div>
+                                        <div class="col-sm-7 cd"><input type="text" class="form-control"></div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 ld"><label>部门全称 :</label></div>
+                                        <div class="col-sm-7 cd"><div class="col-sm-12" style="padding-left: 0px;padding-right: 0px;">
+                                            <span class="span-info"></span>
+                                        </div></div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 ld"><label>显示顺序 :</label></div>
+                                        <div class="col-sm-7 cd"><input type="text" class="form-control"></div>
+                                    </div>
+                                    <div class="tap-select">
+                                        <ul>
+                                            <li class="cur">PC 端</li>
+                                            <li>移动端</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tap-panel">
+                                        <div class="tap-panel1">
+                                            <div class="form-group row">
+                                                <div class="col-sm-3 ld"><label>通讯录查看范围 :</label></div>
+                                                <div class="col-sm-7 cd">
+                                                    <div class="col-sm-9" style="padding-left: 0px;">
+                                                        <span class="span-info"></span>
+                                                    </div>
+                                                    <!-- <span class="col-sm-8 span-info">信息系统部</span> -->
+                                                    <button class='btn col-sm-3 twelve_btn border_btn'>选择部门</button>
+                                                </div>
+                                                <div class="col-sm-2 rd"><a class="red mt7" href="#">删除</a></div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-sm-3 ld"><label>子部门通讯录查看范围 :</label></div>
+                                                <div class="col-sm-7 cd range_choose">
+                                                    <div class="range-choose-box">
+                                                        <label class="radio-inline"><input name="" type="checkbox" value=""><span>允许“”的子部门拥有同样的通讯录查看范围</span></label>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-sm-3 ld"><label>通讯录可被查看范围 :</label></div>
+                                                <div class="col-sm-7 cd">
+                                                    <div class="col-sm-9" style="padding-left: 0px;">
+                                                        <span class="span-info"></span>
+                                                    </div>
+                                                    <!-- <span class="col-sm-8 span-info">信息系统部</span> -->
+                                                    <button class='btn col-sm-3 twelve_btn border_btn'>选择部门</button>
+                                                </div>
+                                                <div class="col-sm-2 rd"><a class="red mt7" href="#">删除</a></div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-sm-3 ld"><label>通讯录可被通讯范围 :</label></div>
+                                                <div class="col-sm-7 cd">
+                                                    <div class="col-sm-9" style="padding-left: 0px;">
+                                                        <span class="span-info"></span>
+                                                    </div>
+                                                    <!-- <span class="col-sm-8 span-info">信息系统部</span> -->
+                                                    <button class='btn col-sm-3 twelve_btn border_btn'>选择部门</button>
+                                                </div>
+                                                <div class="col-sm-2 rd"><a class="red mt7" href="#">删除</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="tap-panel2">
+                                            <button type="button" class="btn btn-gray" ng-click="closeThisDialog()">取消</button>
+                                            <button type="button" class="btn btn-blue" ng-click="confirm()">确定</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
                         </div>
                     </div>
-                    <div class="table_content_box">
-                        <table class="table">
-                            <thead>
-                            <th>属性标识</th>
-                            <th>属性名称</th>
-                            <th>是否禁用</th>
-                            <th>操作</th>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>avatar</td>
-                                <td>职务</td>
-                                <td><button type="button" class="btn btn-blue">启用</button></td>
-                                <td>
-                                    <span class="btn-handle btn-gray">修改</span>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <div class="pagination-box">
-                            <ul class="pagination">
-                                <li><a href="#">上一页</a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">下一页</a></li>
-                            </ul>
+                    <div class="special_bd table_content clearfix ">
+                        <div class="table_content-l col-sm-4">
+                            <div class="btns-hd form-group">
+                                <button type="button" class="btn btn-blue">添加用户</button>
+                                <button type="button" class="btn btn-gray">清空权限</button>
+                            </div>
+                            <div class="table-con">
+                                <ul class="staff">
+                                    <li>
+                                        <label class="radio-inline"><input name="" type="checkbox" value=""><span class='includebox'>姓名</span><span class="duty">职务</span><span class="department">部门</span></label>
+                                    </li>
+                                    <li>
+                                        <label class="radio-inline"><input name="" type="checkbox" value=""><span class='includebox'>刘小二</span><span class="duty">员工</span><span class="department">信息系统部</span></label>
+                                    </li>
+                                    <li>
+                                        <label class="radio-inline"><input name="" type="checkbox" value=""><span class='includebox'>刘那</span><span class="duty">销售经理</span><span class="department">信息系统部</span></label>
+                                    </li>
+                                    <li>
+                                        <label class="radio-inline"><input name="" type="checkbox" value=""><span class='includebox'>刘小二</span><span class="duty">员工</span><span class="department">信息系统部</span></label>
+                                    </li>
+                                    <li>
+                                        <label class="radio-inline"><input name="" type="checkbox" value=""><span class='includebox'>刘那</span><span class="duty">销售</span><span class="department">信息系统部</span></label>
+                                    </li>
+                                    <li>
+                                        <label class="radio-inline"><input name="" type="checkbox" value=""><span class='includebox'>刘小二</span><span class="duty">员工</span><span class="department">信息系统部</span></label>
+                                    </li>
+                                    <li>
+                                        <label class="radio-inline"><input name="" type="checkbox" value=""><span class='includebox'>刘那</span><span class="duty">销售</span><span class="department">信息系统部</span></label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="table_content-r col-sm-8">
+                            <h3 style="line-height: 55px;padding-left: 18px;border-bottom: 1px solid #eff0f4;">用户权限</h3>
+                            <div class="table-con golbal_sty" style="padding-top:30px;">
+                                <form action="" class="form-inline">
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 ld"><label>登录名 :</label></div>
+                                        <div class="col-sm-7 cd"><input type="text" class="form-control"></div>
+                                        <div class="col-sm-2 rd"><span></span></div>
+                                        <div class="col-sm-10 help-block red col-sm-offset-3">错误提示</div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 ld"><label>姓名 :</label></div>
+                                        <div class="col-sm-7 cd"><input type="text" class="form-control"></div>
+                                        <div class="col-sm-2 rd"><span></span></div>
+                                        <div class="col-sm-10 help-block red col-sm-offset-3">错误提示</div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 ld"><label>OA 名 :</label></div>
+                                        <div class="col-sm-7 cd"><input type="text" class="form-control"></div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 ld"><label>部门 :</label></div>
+                                        <div class="col-sm-7 cd">
+                                            <div class="col-sm-9" style="padding-left: 0px;">
+                                                <span class="span-info">信息系统部</span>
+                                            </div>
+                                            <button class='btn col-sm-3 twelve_btn border_btn'>选择部门</button>
+                                        </div>
+                                        <div class="col-sm-2 rd"><a class="red mt7" href="#">删除</a></div>
+
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 ld"><label>职务 :</label></div>
+                                        <div class="col-sm-7 cd"><input type="text" class="form-control"></div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 ld"><label>显示顺序 :</label></div>
+                                        <div class="col-sm-7 cd"><input type="text" class="form-control"></div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 ld"><label>邮箱 :</label></div>
+                                        <div class="col-sm-7 cd"><input type="text" class="form-control"></div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 ld"><label>手机号 :</label></div>
+                                        <div class="col-sm-7 cd"><input type="text" class="form-control"></div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 ld"><label>工作电话 :</label></div>
+                                        <div class="col-sm-7 cd"><input type="text" class="form-control"></div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3 ld"><label>位置 :</label></div>
+                                        <div class="col-sm-7 cd"><input type="text" class="form-control"></div>
+                                    </div>
+
+                                    <div class="tap-select">
+                                        <ul>
+                                            <li class="cur">PC 端</li>
+                                            <li>移动端</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tap-panel">
+                                        <div class="tap-panel1">
+                                            <div class="form-group row">
+                                                <div class="col-sm-3 ld"><label>通讯录查看范围 :</label></div>
+                                                <div class="col-sm-7 cd">
+                                                    <div class="col-sm-9" style="padding-left: 0px;">
+                                                        <span class="span-info"></span>
+                                                    </div>
+                                                    <button class='btn col-sm-3 twelve_btn border_btn'>选择部门</button>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-sm-3 ld"><label>子部门通讯录查看范围 :</label></div>
+                                                <div class="col-sm-7 cd range_choose">
+                                                    <div class="range-choose-box">
+                                                        <label class="radio-inline"><input name="" type="checkbox" value=""><span>允许“”的子部门拥有同样的通讯录查看范围</span></label>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="pcAaddress form-group clearfix row" style="margin-bottom: 9px;">
+                                                <div class="col-sm-3 ld"><label>通讯录隐藏 :</label></div>
+                                                <div class="col-sm-7 range_choose cd">
+                                                    <div class="range-choose-box">
+                                                        <label class="radio-inline"><input name="optionsRadios2" type="radio" value="option1"><span>不隐藏</span></label><label class="radio-inline"><input checked="" name="optionsRadios2" type="radio" value="option2"><span>隐藏</span></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pcAaddress form-group clearfix row" style="margin-bottom: 9px;">
+                                                <div class="col-sm-3 ld"><label>隐藏所有电话 :</label></div>
+                                                <div class="col-sm-7 range_choose cd">
+                                                    <div class="range-choose-box">
+                                                        <label class="radio-inline"><input name="optionsRadios3" type="radio" value="option1"><span>不隐藏</span></label><label class="radio-inline"><input checked="" name="optionsRadios3" type="radio" value="option2"><span>隐藏</span></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pcAaddress form-group clearfix row" style="margin-bottom: 9px;">
+                                                <div class="col-sm-3 ld"><label>状态 :</label></div>
+                                                <div class="col-sm-7 range_choose cd">
+                                                    <div class="range-choose-box">
+                                                        <label class="radio-inline"><input name="optionsRadios4" type="radio" value="option1"><span>启用</span></label><label class="radio-inline"><input checked="" name="optionsRadios4" type="radio" value="option2"><span>禁止</span></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tap-panel2">
+                                            <button type="button" class="btn btn-gray" ng-click="closeThisDialog()">取消</button>
+                                            <button type="button" class="btn btn-blue" ng-click="confirm()">确定</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="hide">
+                <h3>人员属性管理</h3>
+                <div class="person_manager">
+                    <div class="special_hd">
+                        <span class="cur">已显示用户属性</span>
+                        <span>未已显示用户属性</span>
+                    </div>
+                    <div class="table_content">
+                        <div class="table_content_box ">
+                            <table class="table">
+                                <thead>
+                                <th>属性标识</th>
+                                <th>属性名称</th>
+                                <th>顺序</th>
+                                <th>是否禁用</th>
+                                <th>能否编辑</th>
+                                <th>可拨打</th>
+                                <th>操作</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>avatar</td>
+                                    <td>头像</td>
+                                    <td>1</td>
+                                    <td><button type="button" class="btn btn-red">禁用</button></td>
+                                    <td>可编辑</td>
+                                    <td>不可拨打</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <span class="dropdown-toggle btn-handle btn-gray" data-toggle="dropdown">操作<span class="caret"></span></span>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">修改</a></li>
+                                                <li><a href="#">上移</a></li>
+                                                <li><a href="#">下移</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>avatar</td>
+                                    <td>头像</td>
+                                    <td>1</td>
+                                    <td><button type="button" class="btn btn-red">禁用</button></td>
+                                    <td>可编辑</td>
+                                    <td>不可拨打</td>
+                                    <td><div class="dropdown">
+                                        <span class="dropdown-toggle btn-handle btn-gray" data-toggle="dropdown">操作<span class="caret"></span></span>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">修改</a></li>
+                                            <li><a href="#">上移</a></li>
+                                            <li><a href="#">下移</a></li>
+                                        </ul>
+                                    </div></td>
+                                </tr>
+                                <tr>
+                                    <td>avatar</td>
+                                    <td>头像</td>
+                                    <td>1</td>
+                                    <td><button type="button" class="btn btn-red">禁用</button></td>
+                                    <td>可编辑</td>
+                                    <td>不可拨打</td>
+                                    <td><div class="dropdown">
+                                        <span class="dropdown-toggle btn-handle btn-gray" data-toggle="dropdown">操作<span class="caret"></span></span>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">修改</a></li>
+                                            <li><a href="#">上移</a></li>
+                                            <li><a href="#">下移</a></li>
+                                        </ul>
+                                    </div></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagination-box">
+                                <ul class="pagination">
+                                    <li><a href="#">上一页</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">下一页</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="table_content_box">
+                            <table class="table">
+                                <thead>
+                                <th>属性标识</th>
+                                <th>属性名称</th>
+                                <th>是否禁用</th>
+                                <th>操作</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>avatar</td>
+                                    <td>职务</td>
+                                    <td><button type="button" class="btn btn-blue">启用</button></td>
+                                    <td>
+                                        <span class="btn-handle btn-gray">修改</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagination-box">
+                                <ul class="pagination">
+                                    <li><a href="#">上一页</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">下一页</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
