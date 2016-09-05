@@ -232,6 +232,7 @@ body.signin{
 .golbal_sty .form-group.row div.rd{padding-left: 0;}
 .golbal_sty .form-group.row div.rd span{margin-top: 14px;display: inline-block;width: 4px; height: 4px; border-radius: 4px;background-color: #fe4f33;}
 .modal-content .modal-body .form-group .help-block{margin-bottom: 2px;}
+.form-group.has-errors .form-control{border-color: #ff6500;-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);}
 .modal-content .modal-footer{border-top:0;}
 .modal-content .modal-footer .form-group{text-align: center}
 .modal-content .modal-footer .form-group .btn{width: 78px;height: 36px;}
